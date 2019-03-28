@@ -41,6 +41,17 @@ $add_woocomm_dynamic->add_field(
     )
 );
 
+$add_woocomm_dynamic->add_field(
+	'applies_to',
+	'Applies To',
+    'radio',
+    array(
+        'everyone' => 'Everyone'
+    )
+);
+
+$add_woocomm_dynamic->add_field('type', 'Type', 'radio', array('price_discount' => 'Price discount', 'percentage_discount' => 'Percentage discount', 'fixed_price' => 'Fixed price'));
+
 $add_woocomm_dynamic->add_field('date_from', 'Date From', 'text');
 $add_woocomm_dynamic->add_field('date_to', 'Date To', 'text');
 
@@ -55,4 +66,3 @@ function add_woocomm_dynamic_function() {
 }
 
 $add_woocomm_dynamic->run();
-
