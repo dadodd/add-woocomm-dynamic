@@ -54,9 +54,5 @@ function add_woocomm_dynamic_function() {
 	// add data to dynamic pricing
 }
 
-$add_woocomm_dynamic->run(
-	array(
-		"themes" => array("Bi-Shop Child")
-	)
-);
+$add_woocomm_dynamic->run();
 
